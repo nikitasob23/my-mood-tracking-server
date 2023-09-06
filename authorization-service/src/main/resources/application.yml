@@ -1,0 +1,30 @@
+auth:
+  jwt:
+    access:
+      secret: "qBTmv4oX6FR2GwjezDJ4t6fsIUIUhhXqlktXjldkcyXgs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w=="
+      expiration-in-minutes: 5
+    refresh:
+      secret: "zL1HB3Pch05AvfyBovxrf/kpF9t2m4NC9KJUjEp27s9J2jEG3ifiKCGylaZ8fDeoONSTJP/wAzKawB8F9rOMNg=="
+      expiration-in-minutes: 30
+
+server:
+  hostname: "localhost"
+  port: 8081
+
+logger:
+  message:
+    field:
+      object-state-key: objectState
+      stack-trace-key: stackTrace
+
+masked:
+  json:
+    find-field-key-value-pattern-template: "\"\\w*(?i)(%s)\\w*\":\"[\\w\\W]*?\""
+    find-field-value-from-key-value-pattern: "(?<=\":\")[^\"]*"
+    char-mask: "*"
+
+    password-field-name: "password"
+    password-number-of-non-masked-char-from-end: 0
+
+    token-field-name: "token"
+    token-number-of-non-masked-char-from-end: 4

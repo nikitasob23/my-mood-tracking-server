@@ -1,0 +1,8 @@
+auth:
+  exception:
+    message:
+      username-not-found: Username not found
+      user-already-exists: User already exists
+      wrong-password: Wrong password
+      database: Uncorrected work with database
+      expired-auth-token: Expired auth token

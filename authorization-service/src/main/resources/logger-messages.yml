@@ -1,0 +1,19 @@
+auth:
+  logger:
+#    message:
+    user-already-exists: User already exists
+    database-error: Uncorrected work with database
+#    template:
+    username-not-found-template: "Username for user {} not found"
+    wrong-password: "User {} has a wrong password"
+
+    succeed-controller-work-template: "Succeed controller work with user: {}"
+    failed-controller-work-template: "Failed controller work with user: {}"
+
+    expired-auth-token-template: "User {} has expired auth token"
+
+    succeed-jwt-generation-template: "Succeed jwt generation for {}"
+    jwt-is-valid-template: "Jwt token of {} is valid"
+    jwt-is-not-valid-template: "Jwt token {} if not valid"
+    expired-jwt-token-template: "Jwt token {} has expired"
+    unknown-error-with-jwt-generation-template: "Unknown error with jwt generation of user: {}"

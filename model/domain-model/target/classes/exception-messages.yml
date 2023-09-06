@@ -1,0 +1,6 @@
+exception:
+  message:
+    logger:
+      token:
+        not-found-token-value-pattern: "Didn't find a token value pattern in json"
+        not-applied-token-mask: "The mask was not applied to the token"

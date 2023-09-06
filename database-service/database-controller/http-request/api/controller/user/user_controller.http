@@ -1,0 +1,21 @@
+POST http://localhost:8888/api/repo/user/saving HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "u",
+  "login_info": {
+    "username": "123@gmail.com",
+    "password": "p",
+    "roles": [
+      "USER",
+      "ADMIN"
+    ]
+  },
+  "active_details": {
+    "active": true,
+    "non_locked": true,
+    "creation": "2023-04-15T23:57:43.280499",
+    "last_visit": "2023-04-18T23:57:43.280568"
+  },
+  "refresh_token": null
+}

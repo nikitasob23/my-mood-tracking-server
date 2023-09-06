@@ -1,0 +1,14 @@
+hostname: "localhost:8080"
+
+transmission-protocol: http
+
+spring:
+  mail:
+    host: smtp.yandex.ru
+    username: moodtracker@yandex.ru
+    password: fox5aq-dekJe1-gahkiw
+    port: 465
+    protocol: smtps
+
+mail:
+  debug: false
